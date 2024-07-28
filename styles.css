@@ -49,6 +49,8 @@ a {
     text-decoration: none;
 }
 
+/*          Seção Home            */
+
 #home {
     display: flex;
     flex-direction: row;
@@ -104,4 +106,83 @@ p {
 #footer section img {
     width: 70px;
     height: 70px;
+}
+
+.telefone-info, .email-info, .linkedin-info, .github-info {
+    position: relative;
+    display: inline-block;
+}
+.telefone-info a, .email-info a, .linkedin-info a, .github-info a {
+    text-decoration: none;
+}
+
+.telefone-info:hover::after {
+    content: "+55 (81) 98597-9232";
+}
+
+.email-info:hover::after {
+    content: "az.88004607@gmail.com";
+}
+
+.linkedin-info:hover::after {
+    content: "Ruan Lima";
+}
+
+.github-info:hover::after {
+    content: "Ruan12419";
+}
+
+.telefone-info:hover::after, .email-info:hover::after, .linkedin-info:hover::after, .github-info:hover::after {
+    position: absolute;
+    top: -80px;
+    left: -65px;
+    background-color: #fff;
+    font-size: larger;
+    text-align: center;
+    width: 220px;
+    padding: 5px 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+/*          Seção Design            */
+
+#design #info {
+    padding: 0px 70px;
+}
+
+#design #info ul {
+    margin-bottom: 40px;
+    margin-top: -10px;
+}
+
+.projetos {
+    height: 550px;
+    overflow-y: auto;
+}
+
+.projeto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projeto p {
+    padding: 0px 15px;
+}
+
+.projetos::-webkit-scrollbar {
+    width: 20px;
+}
+
+.projetos::-webkit-scrollbar-thumb {
+    background-color: rgb(6, 179, 75);
+    border-radius: 10px;
+}
+
+.projetos::-webkit-scrollbar-track {
+    background-color: grey;
+    border-radius: 8px;
 }
